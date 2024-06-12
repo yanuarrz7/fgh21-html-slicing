@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/Poppins-Regular.ttf);
+}
+
+.container {
+    display: flex;
+}
+
+.container .kanan .title h1{
+    font-size: 24px;
+}
+.container .kanan .title p{
+    font-size: 14px;
+}
+
+/* halaman kiri */
+.container .kiri {
+    width: 80%;
+    background-color: #3366FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .kiri .image {
+    width: 250x;
+    height: 250px;
+    object-fit: contain;
+}
+
+/* halaman kiri dan kanan full sreen */
+.container .kiri,
+.container .kanan {
+    height: 100vh;
+}
+
+/* halaman kanan */
+.container .kanan {
+    width: 20%;
+    padding: 0 200px;
+    font-family: Poppins;
+}
+
+/* semua class input */
+.input-wrapper {
+    margin-bottom: 20px;
+}
+
+/* input box */
+.input-wrapper input {
+    font-size: 14px;
+    height: 55px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+}
+
+/* warna untuk wetick */
+.container .kanan .we {
+    font-family: Poppins;
+    font-size: 24px;
+    margin-right: -4px;
+    color: #4166FD;
+}
+
+.container .kanan .tick {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #F34172;
+}
+
+.checkbox {
+    font-family: Poppins;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+    accent-color: blue;
+}
+
+.button {
+    font-family: Poppins;
+    height: 55px;
+    color: white;
+    border-radius: 15px;
+    background-color: #3366FF;
+    border: none;
+    width: 100%;
+}
