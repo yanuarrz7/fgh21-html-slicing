@@ -1,0 +1,266 @@
+@font-face {
+    font-family: poppins;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(font/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins-semibold;
+    src: url(font/Poppins-SemiBold.ttf);
+}
+
+body {
+    font-family: poppins;
+    margin: 0;
+    background-color: #F4F7FF;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins-semibold;
+    align-items: center;
+    font-family: poppins-semibold;
+    height: 90px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.navigation .profile img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.navigation .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation .logo .brand {
+    font-family: poppins-bold;
+    font-size: 20px;
+}
+
+.navigation .logo .brand span:nth-child(1) {
+    color: #3366FF;
+}
+
+.navigation .logo .brand span:nth-child(2) {
+    color: #FF3D71;
+}
+
+.navigation .nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.navigation .nav-button button {
+    font-family: poppins-semibold;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 169px;
+    height: 40px;
+}
+
+.navigation .nav-button button:nth-child(1) {
+    border: none;
+    background-color: transparent;
+}
+
+.navigation .nav-button button:nth-child(2) {
+    border: none;
+    background-color: #3366FF;
+    color: white;
+}
+
+.background {
+    background-color: #3366FF;
+    margin-bottom: 100px;
+}
+
+.background .background-img {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    object-fit: contain;
+}
+
+.nav-event .event {
+    text-align: center;
+}
+
+.nav-event .event .border-event {
+    text-align: center;
+    background-color: #FBCFDB;
+    color: #FF3D71;
+    margin: 0 900px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.nav-event .event .evnt {
+    letter-spacing: 3px;
+    font-family: poppins-bold;
+    margin-bottom: 50px;
+}
+
+.date-grip {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: #C1C5D0;
+    margin-bottom: 50px;
+}
+
+.date-grip>div div:first-child {
+    text-align: center;
+}
+
+.date-grip .active {
+    border: 1px solid #FF8900;
+    color: #FF8900;
+    border-radius: 15px;
+}
+
+.date-grip .active::after {
+    content: "\25CF";
+    display: flex;
+    justify-content: center;
+}
+
+.display {
+    position: relative;
+}
+
+.display .content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.display .content img {
+    border-radius: 60px;
+    width: 260px;
+    height: 376px;
+}
+
+.navigasi-button button:nth-child(1) {
+    border: none;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    color: black;
+    margin-right: 30px;
+}
+
+.navigasi-button button:nth-child(2) {
+    border: none;
+    background-color: #3366FF;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+}
+
+.date-content {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.navigasi-button {
+    width: 20%;
+
+}
+
+
+.background-content .kiri .isi img {
+    display: flex;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.background-content .kiri{
+    display: flex;
+    width: 40%;
+    background-color: #F5F7FF;
+    justify-content: center;
+    align-items: center;
+}
+.background-content .kanan {
+    width: 60%;
+    background-color: #F5F7FF;
+}
+
+.background-content .kiri , .background-content .kanan{
+    display: flex;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    height: 915px;
+    border-radius: 30px;
+    margin: 0 120px;
+    align-items: center;
+}
+
+.detail-kiri {
+    width: 40%;
+    /* display: flex; */
+    box-sizing: border-box;
+    height: 100%;
+    padding-left: 100px;
+    padding-top: 100px;
+    
+}
+.detail-kiri img{
+    border-radius: 40px;
+    width: 375px;
+    height: 486px;
+}
+.hati img{
+    margin-top: 40px;
+    width: 25px;
+    height: 25px;
+}
+
+.wishlist {
+    display: flex;
+}
+.detail-kanan {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.detail-kanan .text-container div{
+    font-weight: 600;
+    font-size: 24px;
+}
+.detail-kanan .text-container div:first-child{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 150px;
+}
