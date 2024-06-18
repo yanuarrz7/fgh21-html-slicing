@@ -189,7 +189,6 @@ body {
 
 }
 
-
 .background-content .kiri .isi img {
     display: flex;
     border-radius: 25px;
@@ -215,6 +214,7 @@ body {
 
 .container{
     display: flex;
+    justify-content: center;
     background-color: white;
     height: 915px;
     border-radius: 30px;
@@ -222,14 +222,13 @@ body {
     align-items: center;
 }
 
-.detail-kiri {
-    width: 40%;
-    /* display: flex; */
-    box-sizing: border-box;
-    height: 100%;
-    padding-left: 100px;
-    padding-top: 100px;
-    
+.detail-kiri, .detail-kanan {
+    flex: 1;
+}
+
+.detail-kiri .content .payment-option{
+    width: 40;
+    height: 40;
 }
 .detail-kiri img{
     border-radius: 40px;
@@ -253,14 +252,128 @@ body {
     height: 100%;
 }
 
-.detail-kanan .text-container div{
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.detail-item .detail-value{
+    color: #3366FF;
+    text-align: right;
+}
+
+.detail-kanan .text-container div:nth-child(1){
+    margin-top: 200px; 
     font-weight: 600;
     font-size: 24px;
 }
-.detail-kanan .text-container div:first-child{
-    text-align: center;
+.detail-kanan .text-container div:nth-child(2) {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+
+.event-detail{
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text-container .read-more{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #3366FF;
+}
+
+.text-container .description{
+    color: gray;
+}
+.peta{
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    font-weight: 600;
+    flex-direction: column;
+}
+.peta img{
+    margin-top: 10px;
+    width: 315px;
+    height: 150px;
+}
+
+.footer input {
+    font-family: Poppins;
+    color: white;
+    font-size: 14px;
+    height: 40;
+    width: 169px;
+    border-radius: 15px;
+    background-color: #3366FF;
+    border: none;
+}
+
+.detail-left, .detail-right {
+    flex: 1;
+}
+.detail-left{
+    margin-left: 100px;
+}
+
+.detail-left .payment-option{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.detail-left .card-details {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.detail-right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    font-weight: 600;
+    font-size: 14px;
+}
+.detail-right .text-container {
+    gap: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding-top: 150px;
+}
+
+.detail-right .text-container .detail-item:first-child{
+    font-size: 20px;
+}
+
+.button-payment input{
+    border-radius: 15px;
+    border: none;
+    background-color: #3366FF;
+    font-size: 16px;
+    font-family: poppins;
+    color: white;
+    width: 363px;
+    height: 55px;
+}
+
+.button-ticket input {
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #3366FF;
+    font-size: 16px;
+    font-family: poppins;
+    color: white;
+    width: 315px;
+    height: 55px;
 }
