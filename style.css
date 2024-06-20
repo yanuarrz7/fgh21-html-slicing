@@ -1,26 +1,27 @@
 @font-face {
     font-family: poppins;
-    src: url(assets/font/Poppins-Regular.ttf);
+    src: url(font/Poppins-Regular.ttf);
 }
 
 @font-face {
     font-family: poppins-bold;
-    src: url(assets/font/Poppins-Bold.ttf);
+    src: url(font/Poppins-Bold.ttf);
 }
 
 @font-face {
     font-family: poppins-light;
-    src: url(assets/font/Poppins-Light.ttf);
+    src: url(font/Poppins-Light.ttf);
 }
 
 @font-face {
     font-family: poppins-semibold;
-    src: url(assets/font/Poppins-SemiBold.ttf);
+    src: url(font/Poppins-SemiBold.ttf);
 }
 
 body {
     font-family: poppins;
     margin: 0;
+    background-color: #F4F7FF;
 }
 
 .navigation {
@@ -30,6 +31,23 @@ body {
     align-items: center;
     font-family: poppins-semibold;
     height: 90px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navigation .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 .navigation .profile img{
@@ -104,9 +122,9 @@ body {
     text-align: center;
     background-color: #FBCFDB;
     color: #FF3D71;
-    margin: 0 900px;
     border-radius: 30px;
-    margin-bottom: 25px;
+    width: 150px;
+    height: 30px;
 }
 
 .nav-event .event .evnt {
@@ -140,20 +158,26 @@ body {
 }
 
 .display {
-    position: relative;
+    max-height: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
-.display .content {
+.content {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
+    flex-wrap: nowrap;
 }
 
-.display .content img {
+.content .content-img {
+    display: inline-block;
+}
+
+.content-img img {
     border-radius: 60px;
     width: 260px;
     height: 376px;
+    margin-right: 10px;
 }
 
 .navigasi-button button:nth-child(1) {
@@ -186,7 +210,6 @@ body {
 
 }
 
-
 .background-content .kiri .isi img {
     display: flex;
     border-radius: 25px;
@@ -206,5 +229,172 @@ body {
 }
 
 .background-content .kiri , .background-content .kanan{
+    display: flex;
     height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 915px;
+    border-radius: 30px;
+    margin: 0 120px;
+    align-items: center;
+}
+
+.detail-kiri, .detail-kanan {
+    flex: 1;
+}
+
+.detail-kiri .content .payment-option{
+    width: 40;
+    height: 40;
+}
+.detail-kiri img{
+    border-radius: 40px;
+    width: 375px;
+    height: 486px;
+}
+.hati img{
+    margin-top: 40px;
+    width: 25px;
+    height: 25px;
+}
+
+.wishlist {
+    display: flex;
+}
+.detail-kanan {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.detail-item .detail-value{
+    color: #3366FF;
+    text-align: right;
+}
+
+.detail-kanan .text-container div:nth-child(1){
+    margin-top: 200px; 
+    font-weight: 600;
+    font-size: 24px;
+}
+.detail-kanan .text-container div:nth-child(2) {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+
+.event-detail{
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text-container .read-more{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #3366FF;
+}
+
+.text-container .description{
+    color: gray;
+}
+.peta{
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    font-weight: 600;
+    flex-direction: column;
+}
+.peta img{
+    margin-top: 10px;
+    width: 315px;
+    height: 150px;
+}
+
+.footer input {
+    font-family: Poppins;
+    color: white;
+    font-size: 14px;
+    height: 40;
+    width: 169px;
+    border-radius: 15px;
+    background-color: #3366FF;
+    border: none;
+}
+
+.detail-left, .detail-right {
+    flex: 1;
+}
+.detail-left{
+    margin-left: 100px;
+}
+
+.detail-left .payment-option{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.detail-left .card-details {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.detail-right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    font-weight: 600;
+    font-size: 14px;
+}
+.detail-right .text-container {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.detail-right .text-container .detail-item:first-child{
+    font-size: 20px;
+}
+
+.button-payment input{
+    border-radius: 15px;
+    border: none;
+    background-color: #3366FF;
+    font-size: 16px;
+    font-family: poppins;
+    color: white;
+    width: 363px;
+    height: 55px;
+}
+
+.button-ticket input {
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #3366FF;
+    font-size: 16px;
+    font-family: poppins;
+    color: white;
+    width: 315px;
+    height: 55px;
 }
