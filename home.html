@@ -7,10 +7,15 @@
     </head>
     <body>
         <div class="navigation">
-            <div class="logo">
-                <img src="/assets/image/logo.png" />
-                <div class="brand">
-                    <span>We</span><span>tick</span>
+            <div class="main">
+                <div class="logo">
+                    <img src="/assets/image/logo.png" />
+                    <div class="brand">
+                        <span>We</span><span>tick</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="menu">Menu</button>
                 </div>
             </div>
             <div>
@@ -103,5 +108,11 @@
                 <button>⮕</button>
             </div>
         </div>
+        <script>
+            const nav = document.getElementById("navigation")
+            const navCenter = document.getElementsByClassName("nav-list").item(1)
+            navCenter.setAttribute("style", "display:none;")
+            const menuButton = document.getElementById("menu")
+        </script>
     </body>
 </html>
