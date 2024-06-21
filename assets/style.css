@@ -35,6 +35,47 @@ body {
     margin-bottom: 50px;
 }
 
+.navigation > .main > div:last-child{
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    .navigation {
+        flex-direction: column;
+        height: unset;
+        padding: 20px;
+        gap: 10px; 
+    }
+
+    .navigation .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation > .main{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation>.main>div:last-child{
+        display: unset;
+    }
+
+    .navigation .nav-button {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navigation .nav-button button {
+        width: 100% !important;
+    }
+
+}
+
 .navigation .profile img{
     display: flex;
     width: 50px;
@@ -107,9 +148,9 @@ body {
     text-align: center;
     background-color: #FBCFDB;
     color: #FF3D71;
-    margin: 0 900px;
     border-radius: 30px;
-    margin-bottom: 25px;
+    width: 150px;
+    height: 30px;
 }
 
 .nav-event .event .evnt {
@@ -143,20 +184,26 @@ body {
 }
 
 .display {
-    position: relative;
+    max-height: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
-.display .content {
+.content {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
+    flex-wrap: nowrap;
 }
 
-.display .content img {
+.content .content-img {
+    display: inline-block;
+}
+
+.content-img img {
     border-radius: 60px;
     width: 260px;
     height: 376px;
+    margin-right: 10px;
 }
 
 .navigasi-button button:nth-child(1) {
@@ -376,4 +423,9 @@ body {
     color: white;
     width: 315px;
     height: 55px;
+}
+
+#menu {
+    background-color: transparent;
+    border: none;
 }
