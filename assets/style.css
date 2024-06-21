@@ -40,6 +40,7 @@ body {
 }
 
 
+
 @media (max-width: 992px) {
     .navigation {
         flex-direction: column;
@@ -74,6 +75,36 @@ body {
         width: 100% !important;
     }
 
+    .navigation .profile {
+        display: none;
+    }
+
+    .container{
+        flex-direction: column;
+        height: auto;
+        margin: 0 20px;
+    }
+
+    .container .detail-kiri{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container div:nth-child(1),
+    .text-container div:nth-child(2),
+    .text-container .location{
+        display: none;
+    } 
+    .container .detail-kiri .hati{
+        display: none;
+    }
+
+}
+
+.location{
+    display: flex;
+    justify-content: space-between;
 }
 
 .navigation .profile img{

@@ -8,11 +8,18 @@
 
     </style>
     <body>
-        <div class = "navigation">
-            <div class="logo">
-                <img src="assets/image/logo.png" />
-                <div class="brand">
-                    <span>We</span><span>tick</span>
+        <div id="nav" class = "navigation">
+            <div class="main">
+                <div class="logo">
+                    <img src="assets/image/logo.png" />
+                    <div class="brand">
+                        <span>We</span><span>tick</span>
+                    </div>
+                </div>
+                <div>
+                    <button id="menu">
+                        <img src="/assets/image/list.png" alt="list" />
+                    </button>
                 </div>
             </div>
             <div>
@@ -24,19 +31,16 @@
             </div>
             <div class="profile">
                 <img src="assets/image/profil.png" />
+                <div>Jhon Tomson</div>
             </div>
-            <div>Jhon Tomson</div>
         </div>
-        <div>
             <div class="container">
                 <div class ="detail-kiri">
                     <img src="assets/image/img1.png" alt="event-1">
-                <div class="hati">
-                    <img src="assets/image/heart.png">
-                </div>
-                <div class="wishlist">
-                    Wishlist
-                </div>
+                        <div class="hati">
+                            <img src="assets/image/heart.png">
+                            <span>Wishlist</span>
+                        </div>
                 </div>
                 <div class="detail-kanan">
                     <div class="text-container">
@@ -61,9 +65,29 @@
                     </div>
                     <div class="button-ticket">
                         <input type="button" value="Buy Ticket">
+                     </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <script>
+            const menuBtn = document.getElementById("menu")
+            const nav = document.getElementById("nav")
+            const navCenter = nav.getElementsByClassName("nav-list").item(0)
+            const navButton = nav.getElementsByClassName("nav-button").item(0)
+            menuBtn.onclick = () => {
+                if (navCenter.getAttribute("style")) {
+                    navCenter.removeAttribute("style")
+                } else {
+                    navCenter.setAttribute("style", "display:none; ")
+                }
+                if (navButton.getAttribute("style")) {
+                    navButton.removeAttribute("style")
+                } else {
+                    navButton.setAttribute("style", "display:none; ")
+                }
+            }
+
+            // const contKanan = document.getElementsByClassName("detail-kanan").item(0)
+        </script>
     </body>
 </html>
