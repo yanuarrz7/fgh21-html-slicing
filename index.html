@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+        <div id="nav"class="navigation">
+            <div class="main">
+                <div class="logo">
+                    <img src="/assets/image/logo.png" />
+                    <div class="brand">
+                        <span>We</span><span>tick</span>
+                    </div>
+                </div>
+                <div>
+                    <button id="menu">
+                         <img src="/assets/image/list.png" alt="list"/>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>Create Event</li>
+                    <li>Location</li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button type="button">Log In</button>
+                <button type="button">Sign Up</button>
+            </div>
+        </div>
+        <div class="background">
+            <div class="background-img">
+                <img src="/assets/image/people.png" />
+            </div>
+        </div>
+        <div class="nav-event">
+            <div class="event">
+                <div class="border-event">
+                    <div>― Event</div>
+                </div>
+                <div class="evnt">
+                    <div>Events For You</div>
+                </div>
+            </div>
+        </div>
+        <div class="date-grip">
+            <div>
+                <div>13</div>
+                <div>Mon</div>
+            </div>
+            <div>
+                <div>14</div>
+                <div>Tue</div>
+            </div>
+            <div class="active">
+                <div>15</div>
+                <div>Wed</div>
+            </div>
+            <div>
+                <div>16</div>
+                <div>Thu</div>
+            </div>
+            <div>
+                <div>17</div>
+                <div>Fri</div>
+            </div>
+        </div>
+        <div class="display">
+            <div class="content">
+                    <div class="content-img">
+                        <img src="/assets/image/img1.png">
+                    </div>
+                    <div class="content-img">
+                        <img src="/assets/image/img2.png">
+                    </div>
+                    <div class="content-img">
+                        <img src="/assets/image/img1.png">
+                    </div>
+                    <div class="content-img">
+                        <img src="/assets/image/img2.png">
+                    </div>
+                    <div class="content-img">
+                        <img src="/assets/image/img1.png">
+                    </div>
+                    <div class="content-img">
+                        <img src="/assets/image/img2.png">
+                    </div>
+                    <div class="content-img">
+                        <img src="/assets/image/img1.png">
+                    </div>
+                    <div class="content-img">
+                        <img src="/assets/image/img2.png">
+                    </div>
+                    <div class="content-img">
+                        <img src="/assets/image/img1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="navigasi-button">
+                <button>⬅</button>
+                <button>⮕</button>
+            </div>
+        </div>
+        <script>
+            const menuBtn = document.getElementById("menu")
+            const nav = document.getElementById("nav")
+            const navCenter = nav.getElementsByClassName("nav-list").item(0)
+            const navButton = nav.getElementsByClassName("nav-button").item(0)
+            menuBtn.onclick = ()=>{
+                if(navCenter.getAttribute("style")){
+                    navCenter.removeAttribute("style")
+                }else{
+                    navCenter.setAttribute("style", "display:none; ")
+                }
+                if(navButton.getAttribute("style")){
+                    navButton.removeAttribute("style")
+                }else{
+                    navButton.setAttribute("style", "display:none; ")
+                }
+            }
+        </script>
+    </body>
+</html>

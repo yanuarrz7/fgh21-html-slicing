@@ -1,0 +1,93 @@
+ @font-face {
+        font-family: Poppins;
+        src: url(./assets/Poppins-Regular.ttf);
+        }   
+        .halaman {
+            margin: 0 auto;
+            text-align: left;
+            width: 50%;
+            padding: 20px; 
+        }
+        .halaman h3 {
+            font-family: Poppins;
+            font-size: 14px;
+        }
+        .halaman .edit{
+            margin-bottom: 30px;
+        }
+        .input-wrapper input{
+            width: 315px;
+            height: 55px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .input-wrapper label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .halaman .profil img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+        }
+        .input-wrapper{
+            font-family: Poppins;
+            font-size: 14px;
+        }
+        .input-wrapper input{
+            font-family: Poppins;
+            font-size: 14px;
+        }
+        .data {
+            font-family: Poppins;
+            font-size: 14px;
+        }
+        .radio-group label, .radio-group input{
+            font-family: Poppins;
+            font-size: 14px;
+            display: inline-block;
+            margin-right: 20px;
+            /* vertical-align: middle; */
+            margin-right: 10px;
+        }
+        .radio-group input{
+            transform: scale(0.3);
+            margin-right: 5px;
+        }
+        .halaman .radio-group {
+            margin-bottom: 30px;
+            border: none;
+            padding: 0;
+            background: transparent;
+        }
+        .pilihan label{
+            font-family: Poppins;
+            font-size: 14px;
+        }
+        .pilihan select{
+            font-family: Poppins;
+            font-size: 14px;
+            height: 55px;
+            width: 315px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .birthday {
+            font-family: Poppins;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .date{
+            font-family: Poppins;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .button{
+            font-family: Poppins;
+            font-size: 14px;
+            height: 55px;
+            width: 315px;
+            border-radius: 15px;
+            background-color: #3366FF;
+            border: none;
+        }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Profile</title>
+        <link rel="stylesheet" href="editProfile.css">
+    </head>
+    <body>
+        <div class="halaman">
+            <div class="center">
+                <h3>Edit Profile</h3>
+                <img src="assets/profil.png" />
+            <form>
+                    <div class="input-wrapper">
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name" placeholder="Jhon Tomson">
+                        <div class="data">
+                            <p>Username</p>
+                            <p>@jhont0 <a href="Edit">Edit</a></p>
+                        </div>
+                        <div class="data">
+                            <p>Email</p>
+                             <p>jhont0@mail.com <a href="Edit">Edit</a></p>
+                        </div>
+                            <div class="data">
+                                <p>Phone</p>
+                                <p>01234567890 <a href="Edit">Edit</a></p>
+                            </div>
+                            <fieldset class="radio-group">
+                            <div>
+                                <input type="radio" id="gender1" name="gender" value="male" checked />
+                                <label for="gender1">Male</label>
+                            
+                                <input type="radio" id="gender2" name="gender" value="female">
+                                <label for="gender2">Female</label>
+                            </div>
+                        </fieldset>
+                        <div class="pilihan">
+                            <label for="profession">Profession</label>
+                            <select name="profession" id="profession">
+                                <option value="entrepreneur">Entrepreneur</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="pilihan">
+                            <label for="negara">Nationality</label>
+                            <select name="negara" id="negara">
+                                <option value="negara">Indonesia</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="birthday">Birthday Date</div>
+                        <div class="date">24 / 10 / 2000 <a href="Edit">Edit</a></div>
+                        <div>
+                            <button class= "button" type="submit">Save</button>
+                        </div>
+                </div>
+            </div>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
